@@ -3,10 +3,13 @@ import Image from 'next/image'
 
 export const Home = () => {
   return (
-    <div className='image bg'>
+    <div>
       <Image
-        src="images/Banner-Copher.png"
+        src="/images/Banner-Copher.png"
         alt='background picture'
+        width={1440}
+        height={779}
+        className='h-[90vh]'
       />
     </div>
   )
