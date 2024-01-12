@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>Soy el mejor Footer del mundo!</div>
   )
 }
