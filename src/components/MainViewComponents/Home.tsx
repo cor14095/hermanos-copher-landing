@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { Button } from '../ReUsableComponents/Button'
 
 export const Home = () => {
   return (
@@ -9,8 +10,10 @@ export const Home = () => {
         alt='background picture'
         width={1440}
         height={779}
-        className='h-[90vh]'
+        className='h-[90vh] w-[1440px]'
+        priority={true}
       />
+      <Button/>
     </div>
   )
 }
