@@ -27,6 +27,10 @@ export const NavBar = () => {
           </li>
         </ul>
       </div>
+      <div className="text-slate-100 row-end-1">
+        <h1>2207-9999</h1>
+        <h1>5564-3166</h1>
+      </div>
       <div className='m-auto flex justify-end items-center p-4 text-inverted-space md:hidden'>
         {/** Mobile Nav */}
         <div className='block z-10' onClick={handleNav}>
