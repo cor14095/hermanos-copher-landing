@@ -1,9 +1,15 @@
-
 'use client'
 
 import React from 'react'
 
-export const Button = () => {
+interface Props {
+  className?: string,
+  text: string,
+  onClick?: Function
+}
+
+export const Button = ({ className, onClick, text }: Props) => {
+  const baseClassName = "md:mb-10 md:ml-24 md:p-5 md:text-base text-[8px] inline-block rounded-md shadow-md"
 
   const QuotebuttonAction = async() =>{
     console.log("ingresando a cotización de repuestos"); 
@@ -11,8 +17,14 @@ export const Button = () => {
 
   return (
     <div>
-      <button className="mb-10 ml-24 p-5 inline-block absolute bg-blue-500 rounded-md text-slate-100" onClick={QuotebuttonAction}>
-        Cotizar mi Repuesto
+      <button 
+        className={ 
+          baseClassName + 
+          ` ${className ? className : ''}`
+        } 
+        onClick={() => {onClick ? onClick() : QuotebuttonAction()}}
+      >
+        { text }
       </button>
     </div>
   )
