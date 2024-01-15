@@ -4,7 +4,6 @@ import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
 import { neoTech } from './neoTech'
 
-
 export const metadata: Metadata = {
   title: 'Copher',
   description: 'Hermanos Copher, repuestos y piezas.',

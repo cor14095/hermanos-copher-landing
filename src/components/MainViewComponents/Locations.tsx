@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect } from 'react'
+import { IoLocationSharp } from "react-icons/io5";
 import { Button } from '../ReUsableComponents/Button';
 
 export const Locations = () => {
@@ -54,17 +55,92 @@ export const Locations = () => {
         <div className='bg-hc-blue text-slate-100 w-full flex flex-col'>
           <div className='flex flex-col mt-auto'>
             <span className='font-bold text-2xl m-auto'>Encuentra la tienda mas cercana</span>
-            <span className='m-auto'>contamos con una amplia variedad de repuestos para todas las marcas y modelos de autos</span>
+            <span className='m-auto'>contamos con una amplia variedad de repuestos <br></br>
+            para todas las marcas y modelos de autos</span>
           </div>
           <div className='flex mb-auto p-10'>
             <Button
               text='Tiendas'
-              className='bg-hc-red border-2 border-white m-auto'
+              className='bg-hc-red border-2 border-white m-auto hover:scale-125 duration-200'
             />
           </div>
         </div>
         <div className='w-full h-full max-w-full'>
           <div id="map" className='w-full h-full'></div>
+        </div>
+      </div>
+      <div className='bg-hc-red flex flex-col h-[30vh] '>
+        <div className='mt-auto flex flex-row'>
+
+          <div className='m-auto flex flex-row'>
+            <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Periférico</span>
+                <span className='text-white text-sm font-medium'>Anillo Periferico 3-00,<br></br>zona 3</span>
+              </div>
+          </div>
+          <div className='m-auto flex flex-row'>
+            <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Calz. San Juan</span>
+                <span className='text-white text-sm font-medium'>Calzada San Juan 8-89, Colonia<br></br>el Rosario zona 3 de Mixco</span>
+              </div>
+          </div>
+          <div className='m-auto flex flex-row'>
+            <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Chimaltenango</span>
+                <span className='text-white text-sm font-medium'>Km 57.5 Carretera Interamericana,<br></br>Sector Norte, Aldea Buena Vista.</span>
+              </div>
+          </div>
+          <div className='m-auto flex flex-row'>
+            <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Barberena</span>
+                <span className='text-white text-sm font-medium'>Colonia Campo Real Km.<br></br>53 Barberena, Santa Rosa</span>
+              </div>
+          </div>
+          <div className='m-auto flex flex-row'>
+            <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Escuintla</span>
+                <span className='text-white text-sm font-medium'>Avenida Centroamerica<br></br>10-11</span>
+              </div>
+          </div>
+
+        </div>
+
+        <div className=' mt-auto mb-auto flex flex-row'>
+            
+            <div className='m-auto flex flex-row'>
+              <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Xela</span>
+                <span className='text-white text-sm font-medium'>7a Avenida 3-28,<br></br>Quetzaltenango</span>
+              </div>
+            </div>
+            <div className='m-auto flex flex-row'>
+              <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Teculután</span>
+                <span className='text-white text-sm font-medium'>Km. 121 Ruta al Atlantico,<br></br>Teculután Zacapa Local 3 y 4</span>
+              </div>
+            </div>
+            <div className='m-auto flex flex-row'>
+              <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Huehuetenango</span>
+                <span className='text-white text-sm font-medium'>Sector6, Cambote zona 11,<br></br>Huehuetenango</span>
+              </div>
+            </div>
+            <div className='m-auto flex flex-row'>
+              <IoLocationSharp size={25} color="blue"/>
+              <div className='flex flex-col'>
+                <span className="text-white text-2xl font-black">Centro de Servicio</span>
+                <span className='text-white text-sm font-medium'>Anillo Periferico 4-10 zona 3,<br></br>Guatemala</span>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>
