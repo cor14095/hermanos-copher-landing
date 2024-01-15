@@ -24,14 +24,14 @@ export const NavBar = () => {
         </div>
         <div className='m-auto justify-center items-center p-4 text-inverted-space flex'>
           {/** Web Nav */}
-          <ul className='flex z-20 text-white font-bold'>
-            <li className='p-4 hover:text-black'>
+          <ul className='flex flex-row gap-24 z-20 text-white'>
+            <li className='p-4 hover:text-black text-[20px] font-light'>
               <Link href='/#'>Inicio</Link>
             </li>
-            <li className='p-4 hover:text-black'>
+            <li className='p-4 hover:text-black text-[20px] font-light'>
               <Link href='/#location'>Ubicación</Link>
             </li>
-            <li className='p-4 hover:text-black'>
+            <li className='p-4 hover:text-black text-[20px] font-light'>
               <Link href='/#contact'>Contacto</Link>
             </li>
           </ul>

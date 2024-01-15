@@ -64,7 +64,7 @@ export const Locations = () => {
         </div>
         <div className='h-1 grow m-auto bg-hc-red rounded-md' />
       </div>
-      <div className='flex flex-row w-full h-[40vh]'>
+      <div className='grid grid-cols-1 md:grid-cols-2 w-full h-[100vh] md:h-[40vh]'>
         <div className='bg-hc-blue text-slate-100 w-full flex flex-col'>
           <div className='flex flex-col mt-auto'>
             <span className='font-bold text-2xl m-auto'>Encuentra la tienda mas cercana</span>
@@ -82,7 +82,7 @@ export const Locations = () => {
           <div id="map" className='w-full h-full'></div>
         </div>
       </div>
-      <div className='bg-hc-red h-[30vh] grid grid-cols-3 md:grid-cols-5 gap-2'>
+      <div className='bg-hc-red h-[40vh] md:h-[20vh] grid grid-cols-3 md:grid-cols-5 gap-2'>
         {
           locations.map((element, index) => {
             return (

@@ -15,8 +15,8 @@ export const Home = () => {
       <Image
         src="/images/Banner-Copher.png"
         alt='background picture'
-        width={1440}
-        height={779}
+        width={3840}
+        height={2160}
         className='h-[90vh] w-[1440px] absolut top-0 left-0 m-auto'
         priority={true}
       />

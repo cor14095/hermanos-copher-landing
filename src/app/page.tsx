@@ -11,7 +11,7 @@ export default function Main() {
       <Home />
       <Services />
       <Deals />
-      <Contact />
+      {/** <Contact /> */}
       <Locations />
       <Schedule />
     </main>

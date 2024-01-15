@@ -15,7 +15,7 @@ const LocationElement = ({ title, adress }: Prop) => {
         </div>
         <div className='flex flex-col'>
           <span className="text-white text-lg md:text-xl font-black">{title}</span>
-          <span className='text-white text-sm font-light text-wrap'>{adress}</span>
+          <span className='text-white text-sm font-light italic text-wrap'>{adress}</span>
         </div>
       </div>
     </div>
