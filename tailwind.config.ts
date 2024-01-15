@@ -12,6 +12,9 @@ const config: Config = {
         "hc-red":"#bf0811",
         "hc-blue":"#070058",
         "hc-yellow":"#ffec00"
+      },
+      backgroundImage: {
+        'hc-store-blue': "url('/images/Hermanos-Copher-periferico.png')"
       }
     },
   },

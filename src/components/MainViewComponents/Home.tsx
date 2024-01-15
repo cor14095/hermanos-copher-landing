@@ -13,16 +13,16 @@ export const Home = () => {
   return (
     <div className='relative flex'>
       <Image
-        src="/images/Banner-Copher.png"
+        src="/images/Inicio.png"
         alt='background picture'
-        width={1440}
-        height={779}
-        className='h-[90vh] w-[1440px] absolut top-0 left-0 m-auto'
+        width={3840}
+        height={2160}
+        className='h-[90vh] w-full absolut top-0 left-0 m-auto'
         priority={true}
       />
       <Button
         text='Cotizar mi repuesto'
-        className='bottom-[20%] left-[10%] absolute bg-hc-blue text-slate-100 '
+        className='bottom-[25%] left-[8%] absolute bg-hc-blue text-slate-100 hover:scale-125 duration-200 font-bold tracking-wider'
         onClick={myOnclick}
       />
     </div>

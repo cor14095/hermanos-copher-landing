@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
@@ -18,20 +19,26 @@ export const NavBar = () => {
     <div id='nav' className='fixed left-0 top-0 w-full bg-hc-red z-20 pl-10 pr-10'>
       <div className="hidden md:flex">
         <div className="flex mr-auto">
-          <div className="h-full flex">
-            <span className="m-auto">LogoImg</span>
+          <div className="h-full flex max-w-[20vw] max-h-fit p-4">
+            <Image
+              src="/images/Logo-Hermanos-Copher-LKQ.png" 
+              alt="Logo Hermanos Copher y LKQ"
+              width={4210}
+              height={997}
+              className="w-full h-full"
+            />
           </div>
         </div>
         <div className='m-auto justify-center items-center p-4 text-inverted-space flex'>
           {/** Web Nav */}
-          <ul className='flex z-20 text-white font-bold'>
-            <li className='p-4 hover:text-black'>
+          <ul className='flex flex-row gap-24 z-20 text-white'>
+            <li className='p-4 hover:text-black text-[20px] font-light'>
               <Link href='/#'>Inicio</Link>
             </li>
-            <li className='p-4 hover:text-black'>
+            <li className='p-4 hover:text-black text-[20px] font-light'>
               <Link href='/#location'>Ubicación</Link>
             </li>
-            <li className='p-4 hover:text-black'>
+            <li className='p-4 hover:text-black text-[20px] font-light'>
               <Link href='/#contact'>Contacto</Link>
             </li>
           </ul>
