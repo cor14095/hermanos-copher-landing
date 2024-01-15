@@ -16,7 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const GoogleAPIKey = "AIzaSyDpp5rOxkhzGrHg4dQwQyPXx_dBLnYTXqM"
+  const GoogleAPIKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY
 
   return (
     <html lang="es">
