@@ -16,8 +16,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const GoogleAPIKey = "AIzaSyDpp5rOxkhzGrHg4dQwQyPXx_dBLnYTXqM"
+
   return (
     <html lang="es">
+      <head>
+        {/** <!-- The callback parameter is required, so we use console.debug as a noop --> */}
+        <script async src={`https://maps.googleapis.com/maps/api/js?key=${GoogleAPIKey}&callback=console.debug&libraries=maps,marker&v=beta`}>
+        </script>
+      </head>
       <body className={inter.className}>
         <NavBar />
         {children}

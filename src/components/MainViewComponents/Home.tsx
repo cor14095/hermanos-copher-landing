@@ -11,13 +11,13 @@ export const Home = () => {
   }
 
   return (
-    <div className='relative'>
+    <div className='relative flex'>
       <Image
         src="/images/Banner-Copher.png"
         alt='background picture'
         width={1440}
         height={779}
-        className='h-[90vh] w-[1440px] absolut top-0 left-0'
+        className='h-[90vh] w-[1440px] absolut top-0 left-0 m-auto'
         priority={true}
       />
       <Button

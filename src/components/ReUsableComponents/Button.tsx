@@ -9,15 +9,14 @@ interface Props {
 }
 
 export const Button = ({ className, onClick, text }: Props) => {
-  const baseClassName = "md:mb-10 md:ml-24 md:p-5 sm:p-5 md:text-base text-[14px] inline-block rounded-md shadow-md"
+  const baseClassName = "md:p-5 sm:p-5 md:text-base text-[14px] inline-block rounded-md shadow-md"
 
   const QuotebuttonAction = async() =>{
     console.log("ingresando a cotización de repuestos"); 
   }  
 
   return (
-    <div>
-      <button 
+    <button 
         className={ 
           baseClassName + 
           ` ${className ? className : ''}`
@@ -26,6 +25,5 @@ export const Button = ({ className, onClick, text }: Props) => {
       >
         { text }
       </button>
-    </div>
   )
 }
