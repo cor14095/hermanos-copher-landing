@@ -22,7 +22,7 @@ export const Home = () => {
       />
       <Button
         text='Cotizar mi repuesto'
-        className='bottom-[20%] left-[10%] absolute bg-hc-blue text-slate-100 '
+        className='bottom-[20%] left-[10%] absolute bg-hc-blue text-slate-100 hover:scale-125 duration-200'
         onClick={myOnclick}
       />
     </div>

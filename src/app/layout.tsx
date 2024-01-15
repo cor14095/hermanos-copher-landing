@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
+//import { Neotech } from '../../public/fonts'
+
+//const neotech = Neotech({subsets: ['italic']})
 
 const inter = Inter({ subsets: ['latin'] })
 
