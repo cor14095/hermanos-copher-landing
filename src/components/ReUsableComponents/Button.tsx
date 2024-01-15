@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const Button = ({ className, onClick, text }: Props) => {
-  const baseClassName = "md:p-5 sm:p-5 md:text-base text-[14px] inline-block rounded-md shadow-md"
+  const baseClassName = "md:py-2 md:px-8 sm:p-5 inline-block rounded-lg shadow-md"
 
   const QuotebuttonAction = async() =>{
     console.log("ingresando a cotización de repuestos"); 

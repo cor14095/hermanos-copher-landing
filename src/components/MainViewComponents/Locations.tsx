@@ -65,16 +65,16 @@ export const Locations = () => {
         <div className='h-1 grow m-auto bg-hc-red rounded-md' />
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 w-full h-[100vh] md:h-[40vh]'>
-        <div className='bg-hc-blue text-slate-100 w-full flex flex-col'>
+        <div className='text-slate-100 w-full flex flex-col bg-hc-store-blue bg-cover'>
           <div className='flex flex-col mt-auto'>
-            <span className='font-bold text-2xl m-auto'>Encuentra la tienda mas cercana</span>
-            <span className='m-auto'>contamos con una amplia variedad de repuestos <br></br>
+            <span className='font-bold text-2xl m-auto tracking-widest'>Encuentra la tienda más cercana</span>
+            <span className='m-auto'>Contamos con una amplia variedad de repuestos <br></br>
             para todas las marcas y modelos de autos</span>
           </div>
           <div className='flex mb-auto p-10'>
             <Button
               text='Tiendas'
-              className='bg-hc-red border-2 border-white m-auto hover:scale-125 duration-200'
+              className='bg-hc-red m-auto hover:scale-125 duration-200 font-bold text-xl tracking-wider outline outline-1 outline-offset-2 outline-white'
             />
           </div>
         </div>
