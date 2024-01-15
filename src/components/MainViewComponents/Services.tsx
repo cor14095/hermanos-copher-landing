@@ -15,7 +15,7 @@ export const Services = () => {
   return (
     <div className='grid grid-row-2'>
       <div className='flex flex-row pl-20 pr-20 pt-10 pb-10 gap-3'>
-        <div className='m-auto text-hc-blue text-3xl font-bold'>
+        <div className='m-auto text-hc-blue text-sm md:text-3xl font-bold'>
           <span>Nuestros Servicios</span>
         </div>
         <div className='h-[3px] grow m-auto bg-hc-red rounded-md' />

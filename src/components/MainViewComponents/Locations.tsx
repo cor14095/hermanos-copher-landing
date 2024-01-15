@@ -59,14 +59,14 @@ export const Locations = () => {
   return (
     <div className='flex flex-col w-full'>
       <div className='flex flex-row pl-20 pr-20 pt-10 pb-10 gap-3 w-full'>
-        <div className='m-auto text-hc-blue text-6xl'>
+        <div className='m-auto text-hc-blue text-xl md:text-6xl'>
           <span>Ubicaciones</span>
         </div>
         <div className='h-1 grow m-auto bg-hc-red rounded-md' />
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 w-full h-[100vh] md:h-[40vh]'>
         <div className='text-slate-100 w-full flex flex-col bg-hc-store-blue bg-cover'>
-          <div className='flex flex-col mt-auto'>
+          <div className='flex flex-col mt-auto text-center'>
             <span className='font-bold text-2xl m-auto tracking-widest'>Encuentra la tienda más cercana</span>
             <span className='m-auto'>Contamos con una amplia variedad de repuestos <br></br>
             para todas las marcas y modelos de autos</span>
@@ -74,7 +74,7 @@ export const Locations = () => {
           <div className='flex mb-auto p-10'>
             <Button
               text='Tiendas'
-              className='bg-hc-red m-auto hover:scale-125 duration-200 font-bold text-xl tracking-wider outline outline-1 outline-offset-2 outline-white'
+              className='bg-hc-red m-auto hover:scale-125 duration-200 font-bold text-xl tracking-wider outline outline-1 outline-offset-2 outline-white px-2'
             />
           </div>
         </div>
@@ -82,7 +82,7 @@ export const Locations = () => {
           <div id="map" className='w-full h-full'></div>
         </div>
       </div>
-      <div className='bg-hc-red h-[40vh] md:h-[20vh] grid grid-cols-3 md:grid-cols-5 gap-2'>
+      <div className='bg-hc-red max-h-[40vh] md:h-[20vh] grid grid-cols-2 md:grid-cols-5 gap-2 py-4 px-2 overflow-y-auto'>
         {
           locations.map((element, index) => {
             return (

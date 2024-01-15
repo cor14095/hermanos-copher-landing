@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className='bg-black h-[20vh] w-full'>
-        <div className='grid grid-cols-2 gap-1 w-full h-full'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-1 w-full h-full'>
           <div className='flex flex-col w-full h-full'>
             <Image
               src='/images/Iconos-Redes.png'
