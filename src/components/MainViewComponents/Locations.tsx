@@ -1,13 +1,13 @@
 'use client'
 import React, { useEffect } from 'react'
-import { IoLocationSharp } from "react-icons/io5";
 import { Button } from '../ReUsableComponents/Button';
+import LocationElement from '../ReUsableComponents/LocationElement';
 
 export const Locations = () => {
   let map: google.maps.Map;
   const center: google.maps.LatLngLiteral = { lat: 14.6472287, lng: -90.5254478 };
 
-  //Markers
+  // Markers
   const markerPosition = [
     { 'postition': { lat: 14.6472287, lng: -90.5254478 }, 'label': 'Periférico' },
     { 'postition': { lat: 14.6195206, lng: -90.5468998 }, 'label': 'Calz. San Juan' },
@@ -19,6 +19,19 @@ export const Locations = () => {
     { 'postition': { lat: 15.3010977, lng: -91.4963686 }, 'label': 'Huehuetenango' },
     { 'postition': { lat: 14.6469972, lng: -90.5257205 }, 'label': 'Centro de Servicio' }
   ];
+
+  // LocationsElements
+  const locations = [
+    {"title": "Periférico", "adress": "Anillo Periferico 3-00, zona 3"},
+    {"title": "Calz. San Juan", "adress": "Calzada San Juan 8-89, Colonia el Rosario zona 3 de Mixco"},
+    {"title": "Chimaltenango", "adress": "Km 57.5 Carretera Interamericana, Sector Norte, Aldea Buena Vista."},
+    {"title": "Barberena", "adress": "Colonia Campo Real Km. 53 Barberena, Santa Rosa"},
+    {"title": "Escuintla", "adress": "Avenida Centroamerica 10-11"},
+    {"title": "Xela", "adress": "7a Avenida 3-28, Quetzaltenango"},
+    {"title": "Teculután", "adress": "Km. 121 Ruta al Atlantico, Teculután Zacapa Local 3 y 4"},
+    {"title": "Huehuetenango", "adress": "Sector6, Cambote zona 11, Huehuetenango"},
+    {"title": "Centro de Servicio", "adress": "Anillo Periferico 4-10 zona 3, Guatemala"}
+  ]
 
   function initMap(): void {
     map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
@@ -69,79 +82,18 @@ export const Locations = () => {
           <div id="map" className='w-full h-full'></div>
         </div>
       </div>
-      <div className='bg-hc-red flex flex-col h-[30vh] '>
-        <div className='mt-auto flex flex-row'>
-
-          <div className='m-auto flex flex-row'>
-            <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Periférico</span>
-                <span className='text-white text-sm font-medium'>Anillo Periferico 3-00,<br></br>zona 3</span>
-              </div>
-          </div>
-          <div className='m-auto flex flex-row'>
-            <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Calz. San Juan</span>
-                <span className='text-white text-sm font-medium'>Calzada San Juan 8-89, Colonia<br></br>el Rosario zona 3 de Mixco</span>
-              </div>
-          </div>
-          <div className='m-auto flex flex-row'>
-            <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Chimaltenango</span>
-                <span className='text-white text-sm font-medium'>Km 57.5 Carretera Interamericana,<br></br>Sector Norte, Aldea Buena Vista.</span>
-              </div>
-          </div>
-          <div className='m-auto flex flex-row'>
-            <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Barberena</span>
-                <span className='text-white text-sm font-medium'>Colonia Campo Real Km.<br></br>53 Barberena, Santa Rosa</span>
-              </div>
-          </div>
-          <div className='m-auto flex flex-row'>
-            <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Escuintla</span>
-                <span className='text-white text-sm font-medium'>Avenida Centroamerica<br></br>10-11</span>
-              </div>
-          </div>
-
-        </div>
-
-        <div className=' mt-auto mb-auto flex flex-row'>
-            
-            <div className='m-auto flex flex-row'>
-              <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Xela</span>
-                <span className='text-white text-sm font-medium'>7a Avenida 3-28,<br></br>Quetzaltenango</span>
-              </div>
-            </div>
-            <div className='m-auto flex flex-row'>
-              <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Teculután</span>
-                <span className='text-white text-sm font-medium'>Km. 121 Ruta al Atlantico,<br></br>Teculután Zacapa Local 3 y 4</span>
-              </div>
-            </div>
-            <div className='m-auto flex flex-row'>
-              <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Huehuetenango</span>
-                <span className='text-white text-sm font-medium'>Sector6, Cambote zona 11,<br></br>Huehuetenango</span>
-              </div>
-            </div>
-            <div className='m-auto flex flex-row'>
-              <IoLocationSharp size={25} color="blue"/>
-              <div className='flex flex-col'>
-                <span className="text-white text-2xl font-black">Centro de Servicio</span>
-                <span className='text-white text-sm font-medium'>Anillo Periferico 4-10 zona 3,<br></br>Guatemala</span>
-              </div>
-            </div>
-
-        </div>
+      <div className='bg-hc-red h-[30vh] grid grid-cols-3 md:grid-cols-5 gap-2'>
+        {
+          locations.map((element, index) => {
+            return (
+              <LocationElement 
+                title={element.title}
+                adress={element.adress}
+                key={index}
+              />
+            )
+          })
+        }
       </div>
     </div>
   )
