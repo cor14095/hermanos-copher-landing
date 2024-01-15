@@ -69,7 +69,7 @@ export const Locations = () => {
           <div id="map" className='w-full h-full'></div>
         </div>
       </div>
-      <div className='bg-hc-red flex flex-col h-[30vh]'>
+      <div className='bg-hc-red flex flex-col h-[30vh] '>
         <div className='mt-auto flex flex-row'>
 
           <div className='m-auto flex flex-row'>
