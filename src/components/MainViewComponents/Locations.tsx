@@ -59,7 +59,7 @@ export const Locations = () => {
   return (
     <div className='flex flex-col w-full'>
       <div className='flex flex-row pl-20 pr-20 pt-10 pb-10 gap-3 w-full'>
-        <div className='m-auto text-hc-blue'>
+        <div className='m-auto text-hc-blue text-6xl'>
           <span>Ubicaciones</span>
         </div>
         <div className='h-1 grow m-auto bg-hc-red rounded-md' />

@@ -14,7 +14,7 @@ const LocationElement = ({ title, adress }: Prop) => {
           <IoLocationSharp size={25} color="blue"/>
         </div>
         <div className='flex flex-col'>
-          <span className="text-white text-2xl font-black">{title}</span>
+          <span className="text-white text-lg md:text-xl font-black">{title}</span>
           <span className='text-white text-sm font-light text-wrap'>{adress}</span>
         </div>
       </div>
