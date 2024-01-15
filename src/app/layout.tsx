@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
+import { neoTech } from './neoTech'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Copher',
@@ -25,7 +24,7 @@ export default function RootLayout({
         <script async src={`https://maps.googleapis.com/maps/api/js?key=${GoogleAPIKey}&callback=console.debug&libraries=maps,marker&v=beta`}>
         </script>
       </head>
-      <body className={inter.className}>
+      <body className={neoTech.className}>
         <NavBar />
         {children}
         <Footer />

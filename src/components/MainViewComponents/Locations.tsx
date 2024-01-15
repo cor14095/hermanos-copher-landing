@@ -43,14 +43,14 @@ export const Locations = () => {
   })
 
   return (
-    <div className='flex flex-col'>
-      <div className='flex flex-row pl-20 pr-20 pt-10 pb-10 gap-3'>
+    <div className='flex flex-col w-full'>
+      <div className='flex flex-row pl-20 pr-20 pt-10 pb-10 gap-3 w-full'>
         <div className='m-auto text-hc-blue'>
           <span>Ubicaciones</span>
         </div>
         <div className='h-1 grow m-auto bg-hc-red rounded-md' />
       </div>
-      <div className='flex flex-row w-screen h-[40vh]'>
+      <div className='flex flex-row w-full h-[40vh]'>
         <div className='bg-hc-blue text-slate-100 w-full flex flex-col'>
           <div className='flex flex-col mt-auto'>
             <span className='font-bold text-2xl m-auto'>Encuentra la tienda mas cercana</span>
@@ -63,7 +63,7 @@ export const Locations = () => {
             />
           </div>
         </div>
-        <div className='bg-hc-red w-full h-full'>
+        <div className='w-full h-full max-w-full'>
           <div id="map" className='w-full h-full'></div>
         </div>
       </div>
