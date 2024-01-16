@@ -6,6 +6,9 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
+import { CiHome } from "react-icons/ci";
+import { FaLocationArrow } from "react-icons/fa6";
+import { IoMdTime } from "react-icons/io";
 
 
 export const NavBar = () => {
@@ -32,14 +35,26 @@ export const NavBar = () => {
         <div className='m-auto justify-center items-center p-4 text-inverted-space flex'>
           {/** Web Nav */}
           <ul className='flex flex-row gap-24 z-20 text-white'>
-            <li className='p-4 hover:text-black text-[20px] font-light'>
-              <Link href='/#'>Inicio</Link>
+            <li className='p-4 hover:bg-hc-blue transition text-[20px] font-light rounded-full m-auto
+              hover:shadow shadow-hc-blue cursor-pointer'>
+              <div className="flex flex-row">
+                <CiHome className="m-auto"/>
+                <Link className="pl-2" href='/'>Inicio</Link>
+              </div>
             </li>
-            <li className='p-4 hover:text-black text-[20px] font-light'>
-              <Link href='/#location'>Ubicación</Link>
+            <li className='p-4 hover:bg-hc-blue transition text-[20px] font-light rounded-full m-auto
+              hover:shadow shadow-hc-blue cursor-pointer'>
+              <div className="flex flex-row">
+                <FaLocationArrow className="m-auto"/>
+                <Link className="pl-2" href='/#'>Ubicación</Link>
+              </div>
             </li>
-            <li className='p-4 hover:text-black text-[20px] font-light'>
-              <Link href='/#contact'>Contacto</Link>
+            <li className='p-4 hover:bg-hc-blue transition text-[20px] font-light border-solid rounded-full m-auto
+              hover:shadow shadow-hc-blue cursor-pointer'>
+              <div className="flex flex-row">
+                <IoMdTime className="m-auto"/>
+                <Link className="pl-2" href='/#'>Horarios</Link>
+              </div>
             </li>
           </ul>
         </div>
@@ -75,7 +90,7 @@ export const NavBar = () => {
               <Link href='/#location'>Ubicación</Link>
             </li>
             <li className='p-5 text-4xl hover:text-black' onClick={handleNav}>
-              <Link href='/#contact'>Contacto</Link>
+              <Link href='/#contact'>Horarios</Link>
             </li>
           </ul>
         </div>

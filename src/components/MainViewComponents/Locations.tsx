@@ -82,7 +82,7 @@ export const Locations = () => {
           <div id="map" className='w-full h-full'></div>
         </div>
       </div>
-      <div className='bg-hc-red max-h-[40vh] md:h-[20vh] grid grid-cols-2 md:grid-cols-5 gap-2 py-4 px-2 overflow-y-auto'>
+      <div className='bg-hc-red max-h-[40vh] md:h-[20vh] grid grid-cols-2 md:grid-cols-5 gap-3 py-4 px-2 overflow-y-auto'>
         {
           locations.map((element, index) => {
             return (
