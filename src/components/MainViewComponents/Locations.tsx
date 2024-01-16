@@ -1,9 +1,11 @@
 'use client'
+
 import React, { useEffect } from 'react'
 import { Button } from '../ReUsableComponents/Button';
 import LocationElement from '../ReUsableComponents/LocationElement';
 
 export const Locations = () => {
+
   let map: google.maps.Map;
   const center: google.maps.LatLngLiteral = { lat: 14.6472287, lng: -90.5254478 };
 
@@ -53,7 +55,7 @@ export const Locations = () => {
   }
 
   useEffect(() => {
-    initMap()
+    if (document && document.readyState === "complete") initMap()
   })
 
   return (
