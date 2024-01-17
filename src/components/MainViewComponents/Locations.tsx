@@ -54,12 +54,19 @@ export const Locations = () => {
     })
   }
 
+  const myOnclick = function () {
+    window.open(
+      'https://cophershop.com/',
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  }
+
   useEffect(() => {
-    if (document && document.readyState === "complete") initMap()
+    initMap()
   })
 
   return (
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full' id="ubicaciones">
       <div className='flex flex-row pl-20 pr-20 pt-10 pb-10 gap-3 w-full'>
         <div className='m-auto text-hc-blue text-xl md:text-6xl'>
           <span>Ubicaciones</span>
@@ -77,6 +84,7 @@ export const Locations = () => {
             <Button
               text='Tiendas'
               className='bg-hc-red m-auto hover:scale-125 duration-200 font-bold text-xl tracking-wider outline outline-1 outline-offset-2 outline-white px-2'
+              onClick={myOnclick}
             />
           </div>
         </div>

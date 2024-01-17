@@ -20,7 +20,7 @@ export const NavBar = () => {
 
   return (
     <div id='nav' className='fixed left-0 top-0 w-full bg-hc-red z-20 pl-10 pr-10'>
-      <div className="hidden md:flex">
+      <div className="hidden md:flex md:flex-row">
         <div className="flex mr-auto">
           <div className="h-full flex max-w-[20vw] max-h-fit p-4">
             <Image
@@ -28,45 +28,52 @@ export const NavBar = () => {
               alt="Logo Hermanos Copher y LKQ"
               width={4210}
               height={997}
-              className="w-full h-full"
+              className="max-w-full h-full"
             />
           </div>
         </div>
-        <div className='m-auto justify-center items-center p-4 text-inverted-space flex'>
+        <div className='justify-center items-center text-inverted-space flex grow'>
           {/** Web Nav */}
-          <ul className='flex flex-row gap-24 z-20 text-white'>
-            <li className='p-4 hover:bg-hc-blue transition text-[20px] font-light rounded-full m-auto
-              hover:shadow shadow-hc-blue cursor-pointer'>
-              <div className="flex flex-row">
+          <ul className='flex flex-row gap-1 z-20 text-white h-full'>
+            <li className='hover:from-hc-blue hover:from-40% hover:bg-gradient-to-b transition font-light
+              hover:shadow shadow-hc-blue cursor-pointer w-full h-full flex p-3'>
+              <div className="flex flex-row m-auto text-[1vw]">
                 <CiHome className="m-auto"/>
-                <Link className="pl-2" href='/'>Inicio</Link>
+                <Link className="pl-2 m-auto" href='/'>Inicio</Link>
               </div>
             </li>
-            <li className='p-4 hover:bg-hc-blue transition text-[20px] font-light rounded-full m-auto
-              hover:shadow shadow-hc-blue cursor-pointer'>
-              <div className="flex flex-row">
+            <li className='hover:from-hc-blue hover:from-40% hover:bg-gradient-to-b transition font-light
+              hover:shadow shadow-hc-blue cursor-pointer w-full h-full flex p-3'>
+              <div className="flex flex-row m-auto text-[1vw]">
                 <FaLocationArrow className="m-auto"/>
-                <Link className="pl-2" href='/#'>Ubicación</Link>
+                <Link className="pl-2 m-auto" href='/#ubicaciones'>Ubicación</Link>
               </div>
             </li>
-            <li className='p-4 hover:bg-hc-blue transition text-[20px] font-light border-solid rounded-full m-auto
-              hover:shadow shadow-hc-blue cursor-pointer'>
-              <div className="flex flex-row">
+            <li className='hover:from-hc-blue hover:from-40% hover:bg-gradient-to-b transition font-light
+              hover:shadow shadow-hc-blue cursor-pointer w-full h-full flex p-3'>
+              <div className="flex flex-row m-auto text-[1vw]">
                 <IoMdTime className="m-auto"/>
-                <Link className="pl-2" href='/#'>Horarios</Link>
+                <Link className="pl-2 m-auto" href='/#horarios'>Horarios</Link>
+              </div>
+            </li>
+            <li className='hover:from-hc-blue hover:from-40% hover:bg-gradient-to-b transition font-light
+              hover:shadow shadow-hc-blue cursor-pointer w-full h-full flex p-3'>
+              <div className="flex flex-row m-auto text-[1vw]">
+                <IoMdTime className="m-auto"/>
+                <Link className="pl-2 m-auto" href='https://cophershop.com/' target="_blank">Catalogo</Link>
               </div>
             </li>
           </ul>
         </div>
-        <div className="flex ml-auto flex-col">
-          <div className="flex grow">
+        <div className="flex ml-auto flex-col w-[20vw]">
+          <div className="flex grow m-auto">
             <a href="tel:22079999" className="mt-auto" target="_blank">
               <div className="flex flex-row gap-2">
                 <FaPhoneAlt size={20} color="white" className="m-auto" /> <span className="text-white text-xl font-bold m-auto">2207-9999</span>
               </div>
             </a>
           </div>
-          <div className="flex grow">
+          <div className="flex grow m-auto">
             <a href="https://wa.me/+50255643166" className="mb-auto" target="_blank">
               <div className="flex flex-row mb-auto gap-2">
                 <FaWhatsapp size={20} color="green" className="m-auto" /> <span className="text-white text-xl font-bold m-auto">5564-3166</span>
@@ -87,10 +94,10 @@ export const NavBar = () => {
               <Link href='/#'>Inicio</Link>
             </li>
             <li className='p-5 text-4xl hover:text-black' onClick={handleNav}>
-              <Link href='/#location'>Ubicación</Link>
+              <Link href='/#ubicaciones'>Ubicación</Link>
             </li>
             <li className='p-5 text-4xl hover:text-black' onClick={handleNav}>
-              <Link href='/#contact'>Horarios</Link>
+              <Link href='/#horarios'>Horarios</Link>
             </li>
           </ul>
         </div>

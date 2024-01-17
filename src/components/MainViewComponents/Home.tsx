@@ -6,8 +6,11 @@ import { Button } from '../ReUsableComponents/Button'
 
 export const Home = () => {
 
-  const myOnclick = function() {
-    console.log("Hola mundo!")
+  const myOnclick = function () {
+    window.open(
+      'https://wa.me/+50255643166?text=Hola%21%0AQuisiera%20cotizar%20repuestos.',
+      '_blank' // <- This is what makes it open in a new window.
+    );
   }
 
   return (

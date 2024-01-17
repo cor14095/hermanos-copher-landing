@@ -6,10 +6,17 @@ import React from 'react'
 export const Deals = () => {
 
   const dealsImages = [
-    { src: "/images/Mazda-3.png", alt: "Radiadores Mazda 3", height: 1200, width: 1200 },
-    { src: "/images/Aceite.png", alt: "Aceites", height: 1200, width: 1200 },
-    { src: "/images/Compresores.png", alt: "Compresores", height: 1200, width: 1200 }
+    { src: "/images/Mazda-3.png", alt: "Radiadores Mazda 3", height: 1200, width: 1200, link: "https://wa.me/+50255643166?text=Me%20interesa%20la%20oferta%20de%20radiadores%20Mazda%203" },
+    { src: "/images/Aceite.png", alt: "Aceites", height: 1200, width: 1200, link: "https://wa.me/+50255643166?text=Me%20interesa%20la%20oferta%20de%20aceites." },
+    { src: "/images/Compresores.png", alt: "Compresores", height: 1200, width: 1200, link: "https://wa.me/+50255643166?text=Me%20interesa%20la%20certificacion%20y%20reparacion%20de%20compresores." }
   ]
+
+  const dealClick = function (text: string) {
+    window.open(
+      text,
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  }
 
   return (
     <div className='bg-hc-blue grid grid-row-4'>
@@ -27,7 +34,14 @@ export const Deals = () => {
           dealsImages.map((image, index) => {
             return (
               <div key={index} className='h-full'>
-                <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className='w-[80%] m-auto md:w-full' />
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  className='w-[80%] m-auto md:w-[80%] hover:scale-[1.15] duration-200 hover:cursor-pointer'
+                  onClick={() => dealClick(image.link) }
+                />
               </div>
             )
           })

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Schedule = () => {
   return (
-    <div className='bg-white w-full h-full md:h-[20vh] grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5'>
+    <div className='bg-white w-full h-full md:h-[20vh] grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-5' id='horarios'>
       <div className='flex flex-col'>
         <div className='flex m-auto mb-0'>
           <p className='text-hc-blue m-auto text-xl md:text-6xl max-w-xl text-wrap grow'>Horarios</p>
