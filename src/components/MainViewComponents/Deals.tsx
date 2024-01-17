@@ -39,7 +39,7 @@ export const Deals = () => {
                   alt={image.alt}
                   width={image.width}
                   height={image.height}
-                  className='w-[80%] m-auto md:w-[80%] hover:scale-[1.15] duration-200 hover:cursor-pointer'
+                  className='w-[80%] m-auto md:w-[80%] md:hover:scale-[1.15] duration-200 hover:cursor-pointer'
                   onClick={() => dealClick(image.link) }
                 />
               </div>
