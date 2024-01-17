@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
         {/** <!-- The callback parameter is required, so we use console.debug as a noop --> */}
-        <script async defer src={`https://maps.googleapis.com/maps/api/js?key=${GoogleAPIKey}&callback=console.debug&libraries=maps,marker&v=beta`}>
+        <script src={`https://maps.googleapis.com/maps/api/js?key=${GoogleAPIKey}&callback=console.debug&libraries=maps,marker&v=beta`}>
         </script>
       </head>
       <body className={montserrat.className}>

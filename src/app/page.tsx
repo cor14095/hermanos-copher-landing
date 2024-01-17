@@ -1,4 +1,3 @@
-import { Contact } from "@/components/MainViewComponents/Contact"
 import { Deals } from "@/components/MainViewComponents/Deals"
 import { Home } from "@/components/MainViewComponents/Home"
 import { Locations } from "@/components/MainViewComponents/Locations"
@@ -11,7 +10,6 @@ export default function Main() {
       <Home />
       <Services />
       <Deals />
-      {/** <Contact /> */}
       <Locations />
       <Schedule />
     </main>

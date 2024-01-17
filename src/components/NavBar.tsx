@@ -20,9 +20,9 @@ export const NavBar = () => {
   }
 
   return (
-    <div id='nav' className='fixed left-0 top-0 w-full bg-hc-blue z-20 pl-10 pr-10'>
-      <div className="hidden md:flex md:flex-row">
-        <div className="flex mr-auto">
+    <div id='nav' className='fixed left-0 top-0 w-full bg-hc-blue z-20 px-10 h-[6vh] md:h-[10vh]'>
+      <div className="hidden md:flex md:flex-row h-full">
+        <div className="flex mr-auto h-full">
           <div className="h-full flex max-w-[20vw] max-h-fit p-4">
             <Image
               src="/images/Logo-Hermanos-Copher-LKQ.png" 
