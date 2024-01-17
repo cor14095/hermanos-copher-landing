@@ -8,8 +8,8 @@ interface Prop {
 
 const LocationElement = ({ title, adress }: Prop) => {
   return (
-    <div className='flex overflow-hidden min-h-[12vh] md:min-h-full'>
-      <div className='m-auto flex flex-row'>
+    <div className='flex overflow-hidden min-h-[12vh] md:min-h-full md:ml-10 ml-3'>
+      <div className='flex flex-row'>
         <div className='pt-1'>
           <IoLocationSharp size={25} color="blue"/>
         </div>
