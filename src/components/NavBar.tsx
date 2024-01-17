@@ -9,6 +9,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { CiHome } from "react-icons/ci";
 import { FaLocationArrow } from "react-icons/fa6";
 import { IoMdTime } from "react-icons/io";
+import { GrMultiple } from "react-icons/gr";
 
 
 export const NavBar = () => {
@@ -19,9 +20,9 @@ export const NavBar = () => {
   }
 
   return (
-    <div id='nav' className='fixed left-0 top-0 w-full bg-hc-red z-20 px-10 h-[6vh] md:h-[10vh]'>
-      <div className="hidden md:flex md:flex-row h-full">
-        <div className="flex mr-auto h-full">
+    <div id='nav' className='fixed left-0 top-0 w-full bg-hc-blue z-20 pl-10 pr-10'>
+      <div className="hidden md:flex md:flex-row">
+        <div className="flex mr-auto">
           <div className="h-full flex max-w-[20vw] max-h-fit p-4">
             <Image
               src="/images/Logo-Hermanos-Copher-LKQ.png" 
@@ -59,7 +60,7 @@ export const NavBar = () => {
             <li className='hover:from-hc-blue hover:from-40% hover:bg-gradient-to-b transition font-light
               hover:shadow shadow-hc-blue cursor-pointer w-full h-full flex p-3'>
               <div className="flex flex-row m-auto text-[1vw]">
-                <IoMdTime className="m-auto"/>
+                <GrMultiple className="m-auto"/>
                 <Link className="pl-2 m-auto" href='https://cophershop.com/' target="_blank">Catalogo</Link>
               </div>
             </li>
@@ -83,23 +84,41 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <div className='m-auto flex justify-end items-center p-4 text-inverted-space md:hidden h-full'>
+      <div className='m-auto flex justify-between items-center p-4 text-inverted-space md:hidden h-full'>
+      <span className="text-3xl text-gray-100">Menu</span>
         {/** Mobile Nav */}
         <div className='block z-10' onClick={handleNav}>
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {nav ? <AiOutlineClose size={20} className="text-gray-100" /> : <AiOutlineMenu size={20} className="text-gray-100"/>}
         </div>
-        <div className={`absolute md:hidden top-0 ${nav ? 'left-0' : 'left-full'} flex justify-center items-center text-center w-full h-screen bg-hc-red/80 ease-in duration-300`}>
-          <ul>
-            <li className='p-5 text-4xl hover:text-black' onClick={handleNav}>
-              <Link href='/#'>Inicio</Link>
-            </li>
-            <li className='p-5 text-4xl hover:text-black' onClick={handleNav}>
-              <Link href='/#ubicaciones'>Ubicación</Link>
-            </li>
-            <li className='p-5 text-4xl hover:text-black' onClick={handleNav}>
-              <Link href='/#horarios'>Horarios</Link>
-            </li>
-          </ul>
+        <div className={`absolute md:hidden top-0 ${nav ? 'left-0' : 'left-full'} flex col justify-center items-center text-center w-full h-screen bg-hc-blue/80 ease-in duration-300`}>
+        <div className="flex flex-col">
+            <ul>
+              <li className='p-5 text-4xl text-gray-100' onClick={handleNav}>
+                <div className="flex flex-row  m-auto">
+                  <CiHome/>
+                  <Link href='/#' className="pl-3">Inicio</Link>
+                </div>
+              </li>
+              <li className='p-5 text-4xl text-gray-100' onClick={handleNav}>
+                <div className="flex flex-row m-auto">
+                  <FaLocationArrow/>
+                  <Link href='/#ubicaciones' className="pl-3">Ubicación</Link>
+                </div>
+              </li>
+              <li className='p-5 text-4xl text-gray-100' onClick={handleNav}>
+                <div className="flex flex-row m-auto">
+                  <IoMdTime/>
+                  <Link href='/#horarios' className="pl-3">Horarios</Link>
+                </div>
+              </li>
+              <li className='p-5 text-4xl text-gray-100' onClick={handleNav}>
+                <div className="flex flex-row m-auto">
+                  <GrMultiple/>
+                  <Link href='https://cophershop.com/' target="_blank" className="pl-3">Catalogo</Link>
+                </div>
+              </li>
+            </ul>
+        </div>
         </div>
       </div>
     </div>
