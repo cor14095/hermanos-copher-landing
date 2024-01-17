@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "hc-red":"#bf0811",
+        "hc-red":"#f40408",
         "hc-blue":"#070058",
         "hc-yellow":"#ffec00"
       },
