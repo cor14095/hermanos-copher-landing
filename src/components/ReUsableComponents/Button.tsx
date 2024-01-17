@@ -5,14 +5,21 @@ import React from 'react'
 interface Props {
   className?: string,
   text: string,
-  onClick?: Function
+  type?: string,
+  wpMessage?: string
 }
 
-export const Button = ({ className, onClick, text }: Props) => {
+export const Button = ({ className, text, type, wpMessage }: Props) => {
   const baseClassName = "md:py-2 md:px-8 sm:p-5 inline-block rounded-lg shadow-md"
 
-  const QuotebuttonAction = async() =>{
-    console.log("ingresando a cotización de repuestos"); 
+  const defaultButtonAction = async() => {
+    switch(type) {
+      case "whatsapp":
+        window.open( wpMessage, '_blank');
+        break;
+      default:
+        console.log("Hola mundo!")
+    }
   }  
 
   return (
@@ -21,7 +28,7 @@ export const Button = ({ className, onClick, text }: Props) => {
           baseClassName + 
           ` ${className ? className : ''}`
         } 
-        onClick={() => {onClick ? onClick() : QuotebuttonAction()}}
+        onClick={() => {defaultButtonAction()}}
       >
         { text }
       </button>

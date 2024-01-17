@@ -84,13 +84,13 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <div className='m-auto flex justify-between items-center p-4 text-inverted-space md:hidden'>
+      <div className='m-auto flex justify-between items-center p-4 text-inverted-space md:hidden h-full'>
       <span className="text-3xl text-gray-100">Menu</span>
         {/** Mobile Nav */}
         <div className='block z-10' onClick={handleNav}>
           {nav ? <AiOutlineClose size={20} className="text-gray-100" /> : <AiOutlineMenu size={20} className="text-gray-100"/>}
         </div>
-        <div className={`absolute md:hidden top-0 ${nav ? 'left-0' : 'left-full'} flex flex col justify-center items-center text-center w-full h-screen bg-hc-blue/80 ease-in duration-300`}>
+        <div className={`absolute md:hidden top-0 ${nav ? 'left-0' : 'left-full'} flex col justify-center items-center text-center w-full h-screen bg-hc-blue/80 ease-in duration-300`}>
         <div className="flex flex-col">
             <ul>
               <li className='p-5 text-4xl text-gray-100' onClick={handleNav}>

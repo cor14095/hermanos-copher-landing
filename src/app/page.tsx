@@ -7,7 +7,7 @@ import { Services } from "@/components/MainViewComponents/Services"
 
 export default function Main() {
   return (
-    <main className="pt-[52px] md:pt-[88px]">
+    <main className="pt-[6vh] md:pt-[10vh]">
       <Home />
       <Services />
       <Deals />

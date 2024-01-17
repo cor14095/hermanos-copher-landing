@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
-import { neoTech } from './neoTech'
 import { Montserrat } from 'next/font/google'
 
 export const metadata: Metadata = {
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="es">
       <head>
         {/** <!-- The callback parameter is required, so we use console.debug as a noop --> */}
-        <script async src={`https://maps.googleapis.com/maps/api/js?key=${GoogleAPIKey}&callback=console.debug&libraries=maps,marker&v=beta`}>
+        <script async defer src={`https://maps.googleapis.com/maps/api/js?key=${GoogleAPIKey}&callback=console.debug&libraries=maps,marker&v=beta`}>
         </script>
       </head>
       <body className={montserrat.className}>
