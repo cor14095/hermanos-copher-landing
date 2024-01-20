@@ -6,8 +6,8 @@ import { Montserrat } from 'next/font/google'
 import FacebookPixel from '@/components/FacebookPixel'
 
 export const metadata: Metadata = {
-  title: 'Copher',
-  description: 'Hermanos Copher, repuestos y piezas.',
+  title: 'Hermanos Copher',
+  description: 'Repuestos Para Todos los Autos — Visita Nuestra Web Y Descubre Todos Los Productos Y Servicios De Hermanos Copher. Reparación De Vehículos Con Garantía Y Calidad. Bumper, Silvin. Amortiguador, Stop.',
 }
 
 const montserrat = Montserrat({ subsets: ['latin'] })
