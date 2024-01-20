@@ -4,10 +4,10 @@ import React from 'react'
 export const Services = () => {
 
   const serviceImages = [
-    { src: "/images/Repuestos-Nuevos-Copher.png", alt: "Repuestos nuevos", height: 1200, width: 1200 },
-    { src: "/images/Repuestos-usados-Copher.png", alt: "Repuestos usados", height: 1200, width: 1200 },
-    { src: "/images/Reparacion-copher.png", alt: "Reparacion y certificacion", height: 1200, width: 1200 },
-    { src: "/images/Centro-de-Servicio.png", alt: "Centro de servicio", height: 1200, width: 1200 }
+    { src: "/images/Repuestos-Nuevos-Copher.png", alt: "Repuestos nuevos", height: 1200, width: 1200, description: "" },
+    { src: "/images/Repuestos-usados-Copher.png", alt: "Repuestos usados", height: 1200, width: 1200, description: "" },
+    { src: "/images/Reparacion-copher.png", alt: "Reparacion y certificacion", height: 1200, width: 1200, description: "" },
+    { src: "/images/Centro-de-Servicio.png", alt: "Centro de servicio", height: 1200, width: 1200, description: "" }
   ]
 
   return (
@@ -22,8 +22,8 @@ export const Services = () => {
         {
           serviceImages.map((image, index) => {
             return (
-              <div key={index} className='h-full'>
-                <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className='w-full'/>
+              <div key={index} className='h-full relative'>
+                <Image src={image.src} alt={image.alt} width={image.width} height={image.height} className='w-full' />
               </div>
             )
           })
