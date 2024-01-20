@@ -6,7 +6,7 @@ import { Montserrat } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Copher',
-  description: 'Hermanos Copher, repuestos y piezas.',
+  description: 'Hermanos Copher, auto repuestos nuevos y usados, Y taller de servicio.',
 }
 
 const montserrat = Montserrat({ subsets: ['latin'] })
