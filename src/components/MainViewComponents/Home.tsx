@@ -18,7 +18,7 @@ export const Home = () => {
       />
       <Button
         text='Cotizar mi repuesto'
-        className='bottom-[25%] left-[8%] absolute bg-hc-blue text-slate-100 hover:scale-125 duration-200 font-bold tracking-wider md:text-lg text-sm px-2'
+        className='bottom-[25%] right-[8%] absolute bg-hc-blue text-slate-100 hover:scale-125 duration-200 font-bold tracking-wider md:text-lg text-sm px-2'
         type='whatsapp'
         wpMessage={wpLink}
       />

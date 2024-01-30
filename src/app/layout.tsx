@@ -3,10 +3,11 @@ import './globals.css'
 import { NavBar } from '@/components/NavBar'
 import { Footer } from '@/components/Footer'
 import { Montserrat } from 'next/font/google'
+import FacebookPixel from '@/components/FacebookPixel'
 
 export const metadata: Metadata = {
   title: 'Copher',
-  description: 'Hermanos Copher, auto repuestos nuevos y usados, Y taller de servicio.',
+  description: 'Hermanos Copher, repuestos y piezas.',
 }
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -26,6 +27,7 @@ export default function RootLayout({
         </script>
       </head>
       <body className={montserrat.className}>
+        <FacebookPixel />
         <NavBar />
         {children}
         <Footer />
