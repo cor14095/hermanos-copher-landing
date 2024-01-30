@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <div className='relative flex'>
       <Image
-        src="/images/Copher-Inicio-2.png"
+        src="/images/Copher-inicio-2.png"
         alt='background picture'
         width={3840}
         height={2160}
