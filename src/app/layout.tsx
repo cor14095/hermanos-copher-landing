@@ -5,6 +5,10 @@ import { Footer } from '@/components/Footer'
 import { Montserrat } from 'next/font/google'
 import FacebookPixel from '@/components/FacebookPixel'
 
+// Vercel Analitycs and Speed
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export const metadata: Metadata = {
   title: 'Copher',
   description: 'Hermanos Copher, repuestos y piezas.',
@@ -31,6 +35,8 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
