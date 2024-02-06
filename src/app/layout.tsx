@@ -5,9 +5,13 @@ import { Footer } from '@/components/Footer'
 import { Montserrat } from 'next/font/google'
 import FacebookPixel from '@/components/FacebookPixel'
 
+// Vercel Analitycs and Speed
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export const metadata: Metadata = {
-  title: 'Copher',
-  description: 'Hermanos Copher, repuestos y piezas.',
+  title: 'Hermanos Copher',
+  description: 'Repuestos Para Todos los Autos — Visita Nuestra Web Y Descubre Todos Los Productos Y Servicios De Hermanos Copher. Reparación De Vehículos Con Garantía Y Calidad. Bumper, Silvin. Amortiguador, Stop.',
 }
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -31,6 +35,8 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
