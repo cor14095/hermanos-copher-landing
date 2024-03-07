@@ -61,7 +61,7 @@ export const NavBar = () => {
               hover:shadow shadow-hc-blue cursor-pointer w-full h-full flex p-3'>
               <div className="flex flex-row m-auto text-[1vw]">
                 <GrMultiple className="m-auto"/>
-                <Link className="pl-2 m-auto" href='https://cophershop.com/' target="_blank">Catalogo</Link>
+                <Link className="pl-2 m-auto" href='https://cophershop.com/' target="_blank">Ventas On-line</Link>
               </div>
             </li>
           </ul>
@@ -114,7 +114,7 @@ export const NavBar = () => {
               <li className='p-5 text-4xl text-gray-100' onClick={handleNav}>
                 <div className="flex flex-row m-auto">
                   <GrMultiple/>
-                  <Link href='https://cophershop.com/' target="_blank" className="pl-3">Catalogo</Link>
+                  <Link href='https://cophershop.com/' target="_blank" className="pl-3">Ventas On-line</Link>
                 </div>
               </li>
             </ul>
